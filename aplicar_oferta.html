@@ -13,15 +13,22 @@
      </header>
 
      <main>
-          <p>Estas aplicando a: <strong>Desarrollador Web</strong></p>
-          <button onclick="alert('Aplicación enviada')">Enviar aplicación</button><br>
-          <a href="ofertas.html">Volver a ofertas</a>
+          <p>Estás aplicando a: <strong id="oferta-titulo">Cargando...</strong></p>
+          <button onclick="alert('Aplicación enviada')">Enviar aplicación</button><br><br>
+          <a href="ofertas.html" class="btn">Volver a ofertas</a>
      </main>
 
      <footer>
           <p>© 2025 Plataforma de Empleos</p>
      </footer>
      <script src="components/script.js"></script>
+     <script>
+          document.addEventListener("DOMContentLoaded", () => {
+               // Simulación de carga de datos de la oferta
+               const ofertaTitulo = "Desarrollador Web"; // Aquí vendría de la base de datos o de una variable dinámica
+               document.getElementById("oferta-titulo").innerText = ofertaTitulo;
+          });
+     </script>
 </body>
 
 </html>

@@ -1,53 +1,164 @@
-/* Estilos generales */
+/* RESET Y CONFIGURACIÓN BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  min-height: 100vh;
 }
 
-h2 {
-    color: #333;
+/* HEADER Y FOOTER */
+header, footer {
+  background-color: #003366e6;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+footer {
+  margin-top: 40px;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* CONTENEDOR PRINCIPAL */
+main, .container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para el formulario */
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* TITULOS */
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
-/* Diseño específico de las pantallas */
-.login-container, .registro-container, .panel-container, .ofertas-container, .aplicar-container {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h2, h3 {
+  margin-bottom: 20px;
+  color: #003366e6;
 }
 
+/* BOTONES */
+.btn, button, a.btn {
+  background-color: #007acc;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover, button:hover,a.btn:hover {
+  background-color: #005fa3;
+}
+
+ a.logout-btn, logout-btn {
+  background-color: #cc0000;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+a.logout-btn:hover, logout-btn:hover {
+  background-color: #cc0000;
+}
+/* FORMULARIOS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: auto;
+}
+
+.div, div.contenedor {
+    margin: 20px; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9;
+}
+
+/* LINKS */
 a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007acc;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* TARJETAS DE OFERTAS */
+.card {
+  background-color: #f9fbfc;
+  border: 1px solid #e1e4e8;
+  border-left: 4px solid #007acc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #004b85;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+/* NAV BÁSICO PARA EL PROTOTIPO */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  background-color: #004080;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ALERTAS SIMPLES */
+.alert {
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 10px 20px;
+  border-left: 4px solid #f59e0b;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }

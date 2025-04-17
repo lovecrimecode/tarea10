@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de ejemplo</title>
+  <title>Panel de Empresa</title>
   <link rel="stylesheet" href="components/style.css">
   <script src="components/script.js" defer></script>
 </head>
+
 <body>
-<div class="panel-container">
-     <h2>Bienvenido, Empresa</h2>
-     <a href="publicar_oferta.php"><button>Publicar nueva oferta</button></a>
-     <button id="verPostulantesBtn">Ver Postulantes</button>
-     <a href="index.php">Cerrar sesión</a>
-</div>
+  <header>
+    <h1>Panel de Empresa</h1>
+  </header>
+
+  <main>
+    <div class="panel-container">
+      <h2>Bienvenido, Empresa</h2>
+      <a href="publicar_oferta.html"><button>Publicar nueva oferta</button></a>
+      <button id="verPostulantesBtn">Ver Postulantes</button><br><br>
+      <a href="index.html" class="logout-btn">Cerrar sesión</a>
+    </div>
+  </main>
+
+  <div class="contenedor">
+    <h2>Mis Ofertas Publicadas</h2>
+    <ul>
+      <li>Desarrollador Web - Publicado el 01/01/2025</li>
+      <li>Diseñador Gráfico - Publicado el 02/01/2025</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Plataforma de Empleos</p>
+  </footer>
+</body>
+
+</html>
